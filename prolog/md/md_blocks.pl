@@ -135,7 +135,7 @@ fenced_code(Block) -->
         string_codes(Code, Codes),
         (   Lang = ''
         ->  Block = pre(code(Code))
-        ;   Block = pre(code(['data-language'=Lang], Code)))
+        ;   Block = pre(code(['class'=Lang], Code)))
     }.
 
 % Optimizes generated HTML structure.

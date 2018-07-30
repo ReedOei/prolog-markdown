@@ -265,7 +265,7 @@ test(fenced_code_no_language):-
 % Fenced code block, with language.
 
 test(fenced_code):-
-    md_parse_string("```prolog\nabc\n```", [pre(code(['data-language'=prolog], "abc"))]).
+    md_parse_string("```prolog\nabc\n```", [pre(code(['class'=prolog], "abc"))]).
 
 test(hr_after_list_1):-
     md_parse_string("* abc\n* * *\nrest", [ul([li([\["abc"]])]), hr([]), p([\["rest"]])]).
